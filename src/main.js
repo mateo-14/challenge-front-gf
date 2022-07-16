@@ -15,7 +15,7 @@ import { setupFilterBar } from './filterBar'
 
   const modalWrapper = document.getElementById('modal-wrapper')
   modalWrapper.addEventListener('click', e => {
-    if (e.target.classList.contains('modal-close-btn')) closeModal()
+    if (e.target.classList.contains('modal-close-btn') || e.target === e.currentTarget) closeModal()
   })
 })()
 
