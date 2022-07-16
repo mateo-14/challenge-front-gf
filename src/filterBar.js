@@ -44,8 +44,8 @@ export async function setupFilterBar(onFilterChange) {
 
   filterSelectList.addEventListener('click', async e => {
     if (e.target.tagName === 'BUTTON') {
-      const svg = filterSelectBtn.children[0]
-      filterSelectBtn.innerHTML = `${e.target.innerText}${svg.outerHTML}`
+      const svgs = filterSelectBtn.children
+      filterSelectBtn.innerHTML = `${e.target.innerText}${svgs[0].outerHTML}${svgs[1].outerHTML}`
       filterSelect.classList.toggle('open')
 
       const group = e.target.dataset.group
