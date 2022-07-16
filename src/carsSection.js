@@ -151,7 +151,7 @@ function openInclusionsModal(name, inclusions) {
   })
 
   modal.innerHTML = `<div class="inclusions-modal__header">
-                        <h2 class="inclusions-modal__heading">Rate Information</h2>
+                        <h2 class="inclusions-modal__heading">Rate information</h2>
                         <button role="button" class="inclusions-modal__close-btn modal-close-btn">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
