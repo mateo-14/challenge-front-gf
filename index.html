@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main role="main" class="main">
+      <section class="filter">
+        <label for="filter-select-btn" class="filter__label">Filter by</label>
+        <div class="filter__select">
+          <button id="filter-select-btn" role="select" data-curr-group="all">
+            All
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <ul id="filter-select-list" hidden role="listbox">
+            <li><button data-group="all" role="option">All</button></li>
+          </ul>
+        </div>
+
+        <div class="filter__checkboxes" id="filter-checkboxes">
+          <label class="checkbox-label">
+            <input type="checkbox" value="manual-transmission" />
+            Manual transmission</label
+          >
+          <label class="checkbox-label">
+            <input type="checkbox" value="automatic-transmission" />
+            Automatic transmission</label
+          >
+          <label class="checkbox-label">
+            <input type="checkbox" value="5-seats" />
+            5 seats</label
+          >
+          <label class="checkbox-label">
+            <input type="checkbox" value="7-seats" />
+            7 seats or more</label
+          >
+          <label class="checkbox-label">
+            <input type="checkbox" value="convertibles" />
+            Convertibles</label
+          >
+        </div>
+      </section>
+      <section class="cars" id="cars-section">
+        <div class="loader cars-loader">
+  
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-wrapper" id="modal-wrapper"></div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

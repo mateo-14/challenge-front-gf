@@ -1,0 +1,15 @@
+{
+  "name": "challenge-front2022",
+  "version": "1.0.0",
+  "description": "Desarrollar utilizando el carsJSON y las imágenes adjuntas, como referencia visual, una página para elegir un vehículo para alquilar.",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.0.0"
+  }
+}

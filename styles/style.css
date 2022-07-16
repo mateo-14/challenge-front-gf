@@ -1,0 +1,102 @@
+@import url('filter.css');
+@import url('cars.css');
+@import url('inclusions-modal.css');
+@import url('loader.css');
+
+@font-face {
+  font-family: Rubik;
+  src: url('../assets/fonts/Rubik-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url('../assets/fonts/Rubik-Medium.ttf');
+  font-weight: 500;
+}
+
+:root {
+  --primary-color: #d4002a;
+  --text-color: #4b4b4b;
+  --primary-text-color: #c50b33;
+  --secondary-text-color: #838383;
+  --light-text-color: #bdbdbd;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  font-family: Rubik;
+}
+
+body {
+  margin: 0;
+  background: #f1f1f1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  margin: auto;
+  min-width: 900px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  padding: 1rem 1.8rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: 0;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #222;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: var(--primary-color);
+  height: 16px;
+  width: 16px;
+}
+
+
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-wrapper.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

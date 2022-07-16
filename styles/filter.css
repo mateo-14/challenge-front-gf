@@ -1,0 +1,100 @@
+/* Filter bar */
+.filter {
+  background: #fff;
+  padding: 1rem 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter by text */
+.filter__label {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+/* Filter select container */
+.filter__select {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 4rem;
+}
+
+/* Filter select button */
+#filter-select-btn {
+  background: 0;
+  border: 0;
+  padding: 1.2rem;
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 0.6rem;
+  width: 140px;
+  justify-content: space-between;
+}
+
+#filter-select-btn svg {
+  height: 20px;
+  width: 20px;
+}
+
+/* Filter select options */
+#filter-select-list {
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: #fff;
+  list-style: none;
+  max-height: 200px;
+  overflow: auto;
+  border-radius: 0.6rem;
+}
+
+#filter-select-list.open {
+  display: block;
+}
+
+/* Filter select option button */
+#filter-select-list button {
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  background: 0;
+  border: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Filter checkboxes */
+.filter__checkboxes {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 0.8rem 0;
+  width: 600px;
+}
+
+.checkbox-label {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.checkbox-label input {
+  margin: 0;
+
+  border-color: green;
+}

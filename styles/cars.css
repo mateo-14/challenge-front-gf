@@ -1,0 +1,160 @@
+/* Cars section */
+.cars {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Car card */
+.car-card {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  background: #fff;
+  box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  gap: 3rem 5rem;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.car-card.animate {
+  opacity: 1;
+}
+.car-card__img {
+  width: 100%;
+}
+
+.car-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Car info texts */
+.car-card__category {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.car-card__group {
+  margin: 1.2rem 0 0.2rem 0;
+}
+
+.car-card__group,
+.car-card__name {
+  letter-spacing: 2px;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Car book now button */
+.car-card__btn {
+  margin-right: 3rem;
+}
+
+.car-card__btn svg {
+  height: 20px;
+  width: 20px;
+}
+
+/* Card sections heading texts */
+
+.car-card__section-heading {
+  color: var(--light-text-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+/* Features list */
+.car-card__characteristics {
+  padding: 0;
+  list-style: none;
+  margin-top: 1.6rem;
+}
+
+/* Features list items */
+.car-card__characteristics li {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 0;
+}
+
+.car-card__characteristics img {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+/* Rates table */
+.car-card__rates {
+  width: 100%;
+}
+
+.car-card__rates td {
+  padding: 1.1rem 0;
+}
+
+/* Apply border to all td excluding last row */
+.car-card__rates tr:not(:last-child) td {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* Apply width auto first two td */
+.car-card__rates :is(td:nth-child(1), td:nth-child(2)) {
+  width: auto;
+}
+
+.car-card__rates td:last-child {
+  width: 100px;
+}
+
+/* Rate row label and radio button */
+.car-card__rate-label {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-weight: 500;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.car-card__rate-label input {
+  margin: 0;
+}
+
+/* Rate inclusions button */
+.car-card__rate-btn {
+  background: 0;
+  border: 0;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.car-card__rate-btn:hover {
+  opacity: 0.9;
+}
+
+/* Rate price */
+.car-card__rate-currency {
+  color: var(--primary-text-color);
+  letter-spacing: 1px;
+  width: 28px;
+}
+
+.car-card__rate-amount {
+  color: var(--primary-color);
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
