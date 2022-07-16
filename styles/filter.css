@@ -44,6 +44,18 @@
   width: 20px;
 }
 
+.filter__select .up-arrow {
+  display: none;
+}
+
+.filter__select.open .down-arrow {
+  display: none;
+}
+
+.filter__select.open .up-arrow {
+  display: block;
+}
+
 /* Filter select options */
 #filter-select-list {
   padding: 0;
@@ -60,7 +72,7 @@
   border-radius: 0.6rem;
 }
 
-#filter-select-list.open {
+.filter__select.open #filter-select-list {
   display: block;
 }
 

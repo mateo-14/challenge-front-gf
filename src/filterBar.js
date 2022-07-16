@@ -1,5 +1,6 @@
 import { getGroups } from './carsService'
 
+const filterSelect = document.getElementById('filter-select')
 const filterSelectBtn = document.getElementById('filter-select-btn')
 const filterSelectList = document.getElementById('filter-select-list')
 const filterCheckBoxes = document.getElementById('filter-checkboxes')
@@ -38,7 +39,7 @@ export async function setupFilterBar(onFilterChange) {
   addGroupsToSelect(groups)
 
   filterSelectBtn.addEventListener('click', () => {
-    filterSelectList.classList.toggle('open')
+    filterSelect.classList.toggle('open')
   })
 
   filterSelectList.addEventListener('click', async e => {
